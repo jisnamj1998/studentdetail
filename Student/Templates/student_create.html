@@ -1,0 +1,42 @@
+{%extends 'base.html'%}
+{%block title_block%}
+<title>movie-create</title>
+{%endblock%}
+{%block main_block%}
+<div class="container border rounded shadow mx-auto my-5 p-4 w-50 ">
+    <h2 class="text-center">create student</h2>
+    <form action="" method="post">
+      {%csrf_token%}
+      <div class="row">
+        <div class="col-6 mb-3">
+            <label for="">Name</label>
+            {{form.name}}
+        </div>
+        <div class="col-6">
+            <label for="">Age</label>
+            {{form.age}}
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+            <label for="">Address</label>
+            {{form.address}}
+        </div>
+        <div class="col-6">
+            <label for="">Score</label>
+            {{form.score}}
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+            <label for="">Division</label>
+            {{form.division}}
+        </div>
+        
+      </div>
+      
+
+      <button type="submit" class="form-control btn btn-outline-success">create</button>
+    </form>
+</div>
+{%endblock%}

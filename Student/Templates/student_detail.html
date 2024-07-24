@@ -1,0 +1,19 @@
+{%extends 'base.html'%}
+{%block title_block%}
+<title>student-detail</title>
+{%endblock%}
+{%block main_block%}
+<div class="container">
+    <div class="card" style="width: 18rem;">
+        <div class="card-header">
+          name:{{data.name}}
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">age:{{data.age}}</li>
+          <li class="list-group-item">address:{{data.address}}</li>
+          <li class="list-group-item">score:{{data.score}}</li>
+          <li class="list-group-item">division:{{data.division}}</li>
+        </ul>
+      </div>
+</div>
+{%endblock%}
